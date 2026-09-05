@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+out/
+.wrangler/
+dist/
+build/
+*.log
+.DS_Store
+*.csv
+*service-account*.json
