@@ -76,23 +76,6 @@ export default function RegisterPage() {
                                         <ArrowUpRight className="size-5 shrink-0" />
                                     </Button>
                                 </a>
-
-                                <a
-                                    href={WHATSAPP_GROUP_URL}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex w-full sm:w-auto"
-                                >
-                                    <Button
-                                        size="lg"
-                                        variant="outline"
-                                        className="w-full sm:w-auto h-12 px-6 sm:px-8 text-base font-semibold gap-2 border-gray-300 text-gray-800 hover:bg-gray-50"
-                                    >
-                                        <MessageCircle className="size-5 shrink-0 text-primary" />
-                                        Join WhatsApp Group
-                                        <ArrowUpRight className="size-4 shrink-0 text-gray-400" />
-                                    </Button>
-                                </a>
                             </div>
 
                             {/* Key Highlights */}
@@ -144,15 +127,21 @@ export default function RegisterPage() {
                                 <p className="text-sm text-gray-600 leading-relaxed">
                                     Join the attendee community on WhatsApp for real-time announcements, schedule reminders, Microsoft Teams links, and participant networking.
                                 </p>
-                                <div className="pt-1">
+                                <div className="pt-2">
                                     <a
                                         href={WHATSAPP_GROUP_URL}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+                                        className="inline-flex w-full"
                                     >
-                                        <span>Join WhatsApp Group</span>
-                                        <ArrowUpRight className="size-4 shrink-0" />
+                                        <Button
+                                            variant="outline"
+                                            className="w-full h-11 text-sm font-semibold gap-2 border-gray-300 text-gray-800 hover:bg-gray-50"
+                                        >
+                                            <MessageCircle className="size-4 shrink-0 text-primary" />
+                                            <span>Join WhatsApp Group</span>
+                                            <ArrowUpRight className="size-4 shrink-0 text-gray-400" />
+                                        </Button>
                                     </a>
                                 </div>
                             </div>
