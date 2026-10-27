@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionContainer from "@/components/common/SectionContainer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, Mail, ShieldAlert } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, CheckCircle2, Mail, MessageCircle, ShieldAlert } from "lucide-react";
 
 export const metadata = {
     title: "Register | Qiskit Fall Fest 2026",
@@ -12,6 +12,8 @@ export const metadata = {
 
 const GOOGLE_FORM_URL =
     "https://docs.google.com/forms/d/e/1FAIpQLSe7TCtOGT9_xKIXn0eGkDWh1JM-f67NZ2BZOFaYsLSHYcz6iQ/viewform";
+const WHATSAPP_GROUP_URL =
+    "https://chat.whatsapp.com/LfsssJZSauEHKFmYSuKlyA?s=cl&p=a&mlu=4&ilr=4";
 const COORDINATOR_EMAIL = "qquest.mitadtuniversity@gmail.com";
 
 export default function RegisterPage() {
@@ -74,6 +76,23 @@ export default function RegisterPage() {
                                         <ArrowUpRight className="size-5 shrink-0" />
                                     </Button>
                                 </a>
+
+                                <a
+                                    href={WHATSAPP_GROUP_URL}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex w-full sm:w-auto"
+                                >
+                                    <Button
+                                        size="lg"
+                                        variant="outline"
+                                        className="w-full sm:w-auto h-12 px-6 sm:px-8 text-base font-semibold gap-2 border-gray-300 text-gray-800 hover:bg-gray-50"
+                                    >
+                                        <MessageCircle className="size-5 shrink-0 text-primary" />
+                                        Join WhatsApp Group
+                                        <ArrowUpRight className="size-4 shrink-0 text-gray-400" />
+                                    </Button>
+                                </a>
                             </div>
 
                             {/* Key Highlights */}
@@ -85,6 +104,10 @@ export default function RegisterPage() {
                                 <div className="flex items-center gap-2">
                                     <CheckCircle2 className="size-4 text-primary shrink-0" />
                                     <span>Open to attendees across all institutions</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <CheckCircle2 className="size-4 text-primary shrink-0" />
+                                    <span>Hybrid format: attend in person or online via Microsoft Teams</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckCircle2 className="size-4 text-primary shrink-0" />
@@ -112,6 +135,28 @@ export default function RegisterPage() {
 
                         {/* Policies & Eligibility Sidebar */}
                         <div className="lg:col-span-5 flex flex-col gap-6">
+                            {/* WhatsApp Attendee Group Card */}
+                            <div className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3 shadow-xs">
+                                <div className="flex items-center gap-2 text-gray-900 font-semibold">
+                                    <MessageCircle className="size-5 text-primary shrink-0" />
+                                    <span>Attendee WhatsApp Group</span>
+                                </div>
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    Join the attendee community on WhatsApp for real-time announcements, schedule reminders, Microsoft Teams links, and participant networking.
+                                </p>
+                                <div className="pt-1">
+                                    <a
+                                        href={WHATSAPP_GROUP_URL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+                                    >
+                                        <span>Join WhatsApp Group</span>
+                                        <ArrowUpRight className="size-4 shrink-0" />
+                                    </a>
+                                </div>
+                            </div>
+
                             {/* 18+ Web Registration Policy */}
                             <div className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3 shadow-xs">
                                 <div className="flex items-center gap-2 text-gray-900 font-semibold">

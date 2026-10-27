@@ -4,6 +4,18 @@ Append-only. **Newest entry at the top.** Every entry names the milestone, the t
 
 ---
 
+## 2026-10-27 — WhatsApp attendee group added to registration page (session 10)
+
+**Milestone:** Maintenance / Outreach | **Tasks:** WhatsApp attendee group link on `/register` | **Model/tool:** Antigravity
+
+**Done:**
+- Added official attendee WhatsApp group link (`https://chat.whatsapp.com/LfsssJZSauEHKFmYSuKlyA?s=cl&p=a&mlu=4&ilr=4`) to `app/register/page.tsx`.
+- Placed secondary CTA button directly adjacent to the primary "Open Registration Form" button in the main card with icon and external link attributes (`target="_blank"`, `rel="noopener noreferrer"`).
+- Added dedicated "Attendee WhatsApp Group" card in the policies/sidebar column for announcements, reminders, and networking.
+- Verified zero third-party tracking scripts (INV-5), zero banned adjectives (INV-8), and clean `npm run lint` and `npm run build`.
+
+---
+
 ## 2026-10-27 — Transition to two-day hybrid event with closing challenge (session 9)
 
 **Milestone:** M1 / Maintenance | **Tasks:** D-015, two-day hybrid transition | **Model/tool:** Antigravity
