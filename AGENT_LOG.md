@@ -4,10 +4,26 @@ Append-only. **Newest entry at the top.** Every entry names the milestone, the t
 
 ---
 
+## 2026-10-27 — Registration moved to Google Form, Supabase retired, M3 cancelled (session 8)
+
+**Milestone:** M1 / M2 / M3 | **Tasks:** D-014, M2 superseded, M3 closed | **Model/tool:** Antigravity
+
+**Done:**
+- Formally recorded **D-014** in `spec/decisions.md`: registration intake moved to dedicated Google Form, Supabase path and keepalive workflow retired, and Hackathon (M3) cancelled following the passed 10 October 2026 sponsorship gate.
+- Rewrote `app/register/page.tsx` as a static, responsive landing page with event overview (3 and 4 November 2026), 18+ policy notice, under-18 offline route instructions (coordinator email `qquest.mitadtuniversity@gmail.com`), QR code image (`/register-qr.png`), and primary button opening the Google Form in a new tab (`target="_blank"`, `rel="noopener noreferrer"`). Zero iframes or 3rd-party tracking scripts (INV-5).
+- Maintained `/register` links on Navbar and Hero components.
+- Removed retired backend and form files: `components/form/RegistrationForm.tsx`, `app/api/register/`, `app/api/keepalive/`, `lib/supabase.ts`, `lib/registration-schema.ts`, `.github/workflows/keepalive.yml`.
+- Removed `@supabase/supabase-js`, `react-hook-form`, `zod`, and `@hookform/resolvers` from `package.json` and synced `package-lock.json`.
+- Marked all M2 tasks as superseded and M3 tasks as closed in `spec/tasks.md`.
+- Updated `BRIEF.md`. Verified clean `npm run lint` and `npm run build` with zero `SUPABASE_*` environment variables required.
+
+---
+
 ## 2026-10-27 — Confirmed IBM speaker added with photo (session 7)
 
 **Milestone:** M1 | **Tasks:** M1-CONTENT-07 | **Model/tool:** Antigravity
 - Confirmed IBM speaker Surya Vamsi Miriyala added to `content/speakers.ts` with photo and speaker-approved bio, `SpeakerCard.tsx` updated with `next/image` support and fallback, and placeholder note dropped from `spec/tasks.md`.
+
 
 ---
 

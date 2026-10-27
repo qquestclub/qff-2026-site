@@ -185,6 +185,25 @@ The rejected list is the part that does the work. Without it, the same option ge
 
 ---
 
+## D-014 — Registration moved to Google Form; Supabase path retired; Hackathon (M3) cancelled
+
+**Status:** decided
+**Decision:**
+1. Registration intake moves to a standing, dedicated Google Form (`https://docs.google.com/forms/d/e/1FAIpQLSe7TCtOGT9_xKIXn0eGkDWh1JM-f67NZ2BZOFaYsLSHYcz6iQ/viewform`). `/register` serves as the public landing page with event details, 18+ policy, under-18 offline route instructions (coordinator email `qquest.mitadtuniversity@gmail.com`), QR code (`/register-qr.png`), and direct link opening the form in a new tab (`target="_blank"`, `rel="noopener noreferrer"`).
+2. The interim custom Supabase API route (`/api/register`), database client (`lib/supabase.ts`), validation schema (`lib/registration-schema.ts`), and scheduled ping (`.github/workflows/keepalive.yml`) are retired and deleted from the codebase. All Supabase, React Hook Form, and Zod dependencies are removed.
+3. Hackathon (M3) is officially cancelled as the sponsorship confirmation deadline (10 October 2026) passed without confirmed sponsorship. M3 is closed permanently; the fest runs as two sessions across 3 and 4 November 2026.
+**Rationale:**
+- Operating custom database endpoints on free-tier services required keepalive cron jobs to avoid auto-pausing and added operational complexity during the final event runway. Google Forms provides a battle-tested, zero-maintenance intake with automatic spreadsheet mirroring (D-005), zero recurring cost (INV-6), and zero cold-start failures.
+- Under-18 participants continue to be routed offline to faculty/coordinator via `qquest.mitadtuniversity@gmail.com` with guardian consent on paper, upholding INV-4. No iframes or third-party scripts are embedded on the site, upholding INV-5.
+- Per `spec/plan.md`, M3 was strictly gated on sponsorship confirmation by 10 October 2026. Because sponsorship was not secured by that date, M3 is closed per the plan. All team capacity is focused on delivering high-quality Part 1 and Part 2 sessions.
+**Rejected:**
+- *Continuing custom Supabase registration backend* — adds ongoing maintenance overhead, free-tier auto-pausing risks, and failure modes on the critical registration path.
+- *Embedding Google Form via iframe* — violates INV-5 (Google scripts and third-party tracking injected into our page origin) and provides a poor mobile user experience compared to a native new-tab flow.
+- *Keeping M3 open past the 10 October deadline* — creates uncertainty for participants and scope creep for the organizing team without secured prize/sponsorship backing.
+**Revisit if:** Never for this event cycle.
+
+---
+
 ## D-0XX — <short title>
 
 **Status:** proposed | decided | superseded by D-0YY
@@ -195,3 +214,4 @@ The rejected list is the part that does the work. Without it, the same option ge
 ```
 
 Rules: add the entry the day the decision is made — backfilled logs are fiction. Supersede rather than delete.
+

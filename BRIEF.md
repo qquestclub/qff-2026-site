@@ -11,19 +11,17 @@
 
 ## Where things stand
 
-**Milestone:** M1 — The site says something true
-**Exit criteria:** every section renders correctly, every claim is sourced, zero placeholder text reachable in production, and the Register CTA points somewhere real
+**Milestone:** M1 complete / M2 superseded by D-014 / M3 closed
+**Exit criteria:** every section renders correctly, every claim is sourced, zero placeholder text reachable in production, and the Register CTA points to the official Google Form.
 
-**Progress:** 29 of 86 tasks checked in `spec/tasks.md`
+The site is live at `https://qff-2026-site.vercel.app`, on **Vercel** (D-013). All core sections (01–10: Hero, About, Decade, Myths, Sessions, Speakers, Schedule, FAQ, Checklist, and Venue) are built and live. Confirmed IBM speaker Surya Vamsi Miriyala is featured with photo and bio.
 
-The site is live at `https://qff-2026-site.vercel.app`, on **Vercel**, not the Cloudflare Pages architecture originally specced — see D-013. Most of M1 is built and confirmed rendering on the production URL: Hero, About, Decade, Myths, Sessions, Speakers, Schedule, FAQ, Checklist and Venue (sections 01–10) are all live. Sessions and Speakers content specifically are done and shipped, though the Speakers section still carries an explicit placeholder speaker pending IBM's confirmation (`content/speakers.ts`, `isPlaceholder: true`).
+Per **D-014**, registration intake has officially moved to a standing Google Form (`https://docs.google.com/forms/d/e/1FAIpQLSe7TCtOGT9_xKIXn0eGkDWh1JM-f67NZ2BZOFaYsLSHYcz6iQ/viewform`). The custom Supabase registration routes, client, keepalive workflow, and dependencies are retired. `/register` now serves as the permanent registration hub with an 18+ policy statement, under-18 offline coordinator route (`qquest.mitadtuniversity@gmail.com`), QR code (`/register-qr.png`), and primary CTA button. Hackathon (M3) is officially closed/cancelled following the 10 October 2026 sponsorship gate.
 
-`Register` exists as a real page with a working-looking form, but its backend is **intentionally incomplete** — paused pending a decision on the registration database (D1 vs. a Vercel-native store; see D-002). Do not treat the current `app/api/register/` route as a finished or safe path; it is a placeholder implementation, not the M2 build-out.
+**Last done:** Confirmed IBM speaker added; D-014 adopted (registration moved to Google Form, Supabase retired, M3 cancelled); `/register` rewritten; M2 marked superseded and M3 marked closed in `spec/tasks.md`.
+**Next:** Polish and final rehearsal checks ahead of the event on 3 and 4 November 2026.
 
-**Last done:** Vercel deploy (retroactively logged 14 September 2026 — see `AGENT_LOG.md`); Sessions and Speakers sections shipped; docs reconciled to match actual deployed state.
-**Next:** Resolve D-002 (registration backend) — it blocks the API route, the Cloudflare/Vercel architecture question, and the rest of M2.
-
-**Deadline reality:** the fest is 3 November 2026. M1 target was 25 September; M2 target 30 September; M3 gated on sponsorship confirmed by 10 October.
+**Event dates:** 3 and 4 November 2026 at MIT Art, Design and Technology University, Pune.
 
 ---
 

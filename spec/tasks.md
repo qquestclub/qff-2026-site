@@ -81,54 +81,56 @@ Recorded 6 September after auditing the first two merged PRs. Do these before Ta
 
 ---
 
-## M2 — Registration works, provably
+## M2 — Registration works, provably · **SUPERSEDED by D-014**
+
+Registration intake moved to a standing Google Form (`https://docs.google.com/forms/d/e/1FAIpQLSe7TCtOGT9_xKIXn0eGkDWh1JM-f67NZ2BZOFaYsLSHYcz6iQ/viewform`). The custom Worker/D1 and interim Supabase backend paths are retired. `/register` serves as the public landing page with Google Form link, QR code, 18+ policy, and under-18 offline route instructions.
 
 ### Data
-- [ ] **M2-DATA-01** Create the D1 database; apply `worker/schema.sql` from `architecture.md` §3
-- [ ] **M2-DATA-02** Verify the schema has no age, DOB, or guardian column (INV-4)
+- [x] **M2-DATA-01** Create the D1 database; apply `worker/schema.sql` from `architecture.md` §3 — *superseded by D-014*
+- [x] **M2-DATA-02** Verify the schema has no age, DOB, or guardian column (INV-4) — *superseded by D-014*
 
 ### API
-- [ ] **M2-API-01** Scaffold the Worker with `wrangler.toml`, D1 binding, CORS restricted to `PROD_URL` and localhost
-- [ ] **M2-API-02** Write `worker/src/normalise.ts` — email and phone normalisation, pure functions, no I/O
-- [ ] **M2-API-03** Write payload validation returning the exact error shapes in `CONTRACT.md`, including `sessionChoice` enum check
-- [ ] **M2-API-04** Add Turnstile server-side verification
-- [ ] **M2-API-05** Implement D1 insert with `UNIQUE` violation caught and mapped to the duplicate response (INV-2)
-- [ ] **M2-API-06** Implement the Sheets mirror write; set `mirrored_at` on success
-- [ ] **M2-API-07** Implement the email-on-failure fallback (INV-1)
-- [ ] **M2-API-08** Add IP rate limiting, 5 submissions/hour
-- [ ] **M2-API-09** Write the resync routine for rows where `mirrored_at IS NULL`
-- [ ] **M2-API-10** Audit every log statement in the Worker for personal data (INV-3)
+- [x] **M2-API-01** Scaffold the Worker with `wrangler.toml`, D1 binding, CORS restricted to `PROD_URL` and localhost — *superseded by D-014*
+- [x] **M2-API-02** Write `worker/src/normalise.ts` — email and phone normalisation, pure functions, no I/O — *superseded by D-014*
+- [x] **M2-API-03** Write payload validation returning the exact error shapes in `CONTRACT.md`, including `sessionChoice` enum check — *superseded by D-014*
+- [x] **M2-API-04** Add Turnstile server-side verification — *superseded by D-014*
+- [x] **M2-API-05** Implement D1 insert with `UNIQUE` violation caught and mapped to the duplicate response (INV-2) — *superseded by D-014*
+- [x] **M2-API-06** Implement the Sheets mirror write; set `mirrored_at` on success — *superseded by D-014*
+- [x] **M2-API-07** Implement the email-on-failure fallback (INV-1) — *superseded by D-014*
+- [x] **M2-API-08** Add IP rate limiting, 5 submissions/hour — *superseded by D-014*
+- [x] **M2-API-09** Write the resync routine for rows where `mirrored_at IS NULL` — *superseded by D-014*
+- [x] **M2-API-10** Audit every log statement in the Worker for personal data (INV-3) — *superseded by D-014*
 
 ### UI
-- [ ] **M2-UI-01** Build the registration form: name, email, phone, college, year of study, session choice, laptop confirmation — grouped as YOUR DETAILS / ATTENDING / CONSENT, visible labels above each input (see `docs/mockups/`)
-- [ ] **M2-UI-02** Add the 18+ confirmation checkbox — `required`, pink asterisk, client and server validated (INV-4)
-- [ ] **M2-UI-09** Add the optional "Keep me updated about future QQuEST events" checkbox, unchecked by default
-- [ ] **M2-UI-03** **STORY** Write the under-18 offline-route explainer beside the form. *Acceptance:* states plainly that under-18s register through the coordinator, gives the contact, does not read as exclusionary.
-- [ ] **M2-UI-04** Integrate the Turnstile widget
-- [ ] **M2-UI-05** Build the success state — renders only after a 200 response (INV-1)
-- [ ] **M2-UI-06** Build every error state, each showing the fallback email address
-- [ ] **M2-UI-07** Add the submit lock preventing double-submission
-- [ ] **M2-UI-08** Write `lib/api.ts` — the single fetch wrapper; explicit CORS mode, never `no-cors`
+- [x] **M2-UI-01** Build the registration form — *superseded by D-014; Google Form used*
+- [x] **M2-UI-02** Add the 18+ confirmation checkbox — *superseded by D-014; 18+ policy stated on /register and enforced on Google Form*
+- [x] **M2-UI-09** Add the optional "Keep me updated about future QQuEST events" checkbox — *superseded by D-014*
+- [x] **M2-UI-03** **STORY** Write the under-18 offline-route explainer beside the form — *done on /register with coordinator contact qquest.mitadtuniversity@gmail.com*
+- [x] **M2-UI-04** Integrate the Turnstile widget — *superseded by D-014*
+- [x] **M2-UI-05** Build the success state — *superseded by D-014*
+- [x] **M2-UI-06** Build every error state — *superseded by D-014*
+- [x] **M2-UI-07** Add the submit lock preventing double-submission — *superseded by D-014*
+- [x] **M2-UI-08** Write `lib/api.ts` — *superseded by D-014*
 
 ### Ops
-- [ ] **M2-OPS-01** Set all Worker secrets via `wrangler secret put`; confirm none appear in git
-- [ ] **M2-OPS-02** Write and run every invariant and negative test in `spec/evals.md`
-- [ ] **M2-OPS-03** Ten live submissions from three devices; verify D1 and mirror counts match
-- [ ] **M2-OPS-04** Prepare the standing Google Form as the cold fallback; document the href swap in `smoke.md`
-- [ ] **M2-OPS-05** Record the M2 verdict table in `spec/evals.md` §7
+- [x] **M2-OPS-01** Set all Worker secrets via `wrangler secret put` — *superseded by D-014*
+- [x] **M2-OPS-02** Write and run every invariant and negative test in `spec/evals.md` — *superseded by D-014*
+- [x] **M2-OPS-03** Ten live submissions from three devices; verify D1 and mirror counts match — *superseded by D-014*
+- [x] **M2-OPS-04** Prepare the standing Google Form as the cold fallback — *done; now primary intake per D-014*
+- [x] **M2-OPS-05** Record the M2 verdict table in `spec/evals.md` §7 — *superseded by D-014*
 
 ---
 
-## M3 — Hackathon surfaces · **GATED, DO NOT START**
+## M3 — Hackathon surfaces · **CLOSED / CANCELLED (D-014)**
 
-Blocked until sponsorship is confirmed by 10 October 2026. If that date passes without confirmation, delete this section.
+Closed permanently. Sponsorship was not confirmed by 10 October 2026. Per the gating rule in `spec/plan.md`, M3 is cancelled and the fest runs as two sessions across 3 and 4 November 2026.
 
-- [ ] **M3-DATA-01** Add the `teams` and `team_members` tables
-- [ ] **M3-API-01** Team registration endpoint, 2–4 members
-- [ ] **M3-API-02** Submission capture — repo URL and description, no file upload
-- [ ] **M3-UI-01** Team registration form
-- [ ] **M3-UI-02** **STORY** Problem statement page, published at the opening ceremony
-- [ ] **M3-OPS-01** Judging tab in the mirror; confirm M2 invariants still hold
+- [x] **M3-DATA-01** Add the `teams` and `team_members` tables — *cancelled (M3 closed)*
+- [x] **M3-API-01** Team registration endpoint, 2–4 members — *cancelled (M3 closed)*
+- [x] **M3-API-02** Submission capture — repo URL and description, no file upload — *cancelled (M3 closed)*
+- [x] **M3-UI-01** Team registration form — *cancelled (M3 closed)*
+- [x] **M3-UI-02** **STORY** Problem statement page, published at the opening ceremony — *cancelled (M3 closed)*
+- [x] **M3-OPS-01** Judging tab in the mirror — *cancelled (M3 closed)*
 
 ---
 
