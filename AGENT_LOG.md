@@ -4,6 +4,23 @@ Append-only. **Newest entry at the top.** Every entry names the milestone, the t
 
 ---
 
+## 2026-10-27 — Transition to two-day hybrid event with closing challenge (session 9)
+
+**Milestone:** M1 / Maintenance | **Tasks:** D-015, two-day hybrid transition | **Model/tool:** Antigravity
+
+**Done:**
+- Updated `content/schedule.ts` with `day: 1 | 2` field and full agendas for Day 1 (3 November 2026: IBM keynotes by Surya Vamsi Miriyala, Q&A, and interactive exploration) and Day 2 (4 November 2026: Qiskit circuits, hardware basics, quantum technologies overview, and closing hands-on challenge). All timestamps stored in UTC ISO with `Z`, rendered in IST with literal ` IST`.
+- Updated `components/sections/SectionSchedule.tsx` to group items into distinct Day 1 (3 November 2026) and Day 2 (4 November 2026) cards, responsive and legible down to 360px mobile viewports.
+- Rewrote `content/sessions.ts` to match the two-day schedule, updated `content/speakers.ts` session pointer to `ibm-keynotes`, and adjusted `SectionSessions.tsx` header to "Event Sessions".
+- Updated `content/faq.ts` with entries for attending online (Teams link emailed to registrants, not public), certificates (issued after feedback form submission), and closing hands-on challenge (replacing traditional hackathon). Removed references to one day.
+- Updated `Hero.tsx` ("A two-day hybrid quantum computing event...", "3 and 4 November 2026"), `app/layout.tsx` metadata description, and `app/register/page.tsx` date and hybrid attendance copy, preserving `metadataBase`, canonical, and OG URL logic.
+- Added explicit online attendance notice to `SectionVenue.tsx` stating registered online attendees will receive the Microsoft Teams link via email.
+- Recorded **D-015** in `spec/decisions.md` and updated `README.md`, `spec/product.md`, and `BRIEF.md`.
+- Verified strict INV-8 compliance (zero banned adjectives in copy) and verified no "one-day" or "hackathon" text in `content/` or `components/`.
+- Validated via `npm run lint` and `npm run build`.
+
+---
+
 ## 2026-10-27 — Registration moved to Google Form, Supabase retired, M3 cancelled (session 8)
 
 **Milestone:** M1 / M2 / M3 | **Tasks:** D-014, M2 superseded, M3 closed | **Model/tool:** Antigravity

@@ -45,9 +45,9 @@ Point here when scope creep is proposed.
 
 Ranked. Only the top one drives decisions.
 
-1. **Attendees who show up on 3 November** — target 120 in the room, of which at least 30 from outside MIT-ADT. This is the number that matters; everything else is a proxy.
+1. **Attendees who participate on 3 and 4 November** — target 120 in person plus online participants via Microsoft Teams, of which at least 30 from outside MIT-ADT. This is the number that matters; everything else is a proxy.
 2. **Registrations completed** — target 250. Secondary because registration is cheap and attendance is not.
-3. **Part 2 starts on time** — the workshop begins with people running circuits, not creating accounts. Binary, judged on the day.
+3. **Day 2 workshops start on time** — the workshop begins with people running circuits, not creating accounts. Binary, judged on the day.
 
 Note: the form deliberately does **not** ask whether someone already has an IBM Quantum account, so #3 is not measurable in advance. The pre-event checklist section carries that job instead. If you want it measurable, adding the field is a schema change — decide before M2, not after.
 
@@ -55,21 +55,20 @@ Note: the form deliberately does **not** ask whether someone already has an IBM 
 
 ## 7. Kill criteria
 
-Not applicable to the site — the fest happens on 3 November regardless, so the site ships in some form.
+Not applicable to the site — the fest happens on 3 and 4 November regardless, so the site ships in some form.
 
 The scope-level kill criteria:
 
-- **M3 (hackathon) dies** if sponsorship is not confirmed by **10 October 2026**. That is three weeks out, which is the last point at which the surfaces can be built and tested honestly. After that date, M3 is closed regardless of what sponsors say, and the fest runs as two sessions.
-- **The in-house registration form dies** if the Worker is not passing its evals by **28 September 2026**. Fallback is the standing Google Form; the button's `href` changes and nothing else does.
+- **M3 (hackathon) closed** — replaced by a closing hands-on coding challenge on Day 2.
+- **The in-house registration form dies** if the Worker is not passing its evals by **28 September 2026**. Fallback is the standing Google Form; the button's `href` changes and nothing else does (D-014 adopted).
 
 ## 8. Glossary
 
-- **Fest** — the 3 November 2026 event as a whole.
-- **Part 1** — Quantum 101, 1–2 h. Introduces quantum technologies and quantum computing; explains real-world applications; explicitly covers what quantum is *not* and corrects hype and misinformation.
-- **Session choice** — a registrant may attend Part 1 only, Part 2 only, or both (D-010). Stored as `session_choice`.
-- **Part 2** — Hands-on with Qiskit, 2–3 h. Building circuits in Jupyter, simulators for simple tasks, real IBM hardware via free-tier API keys, universal gates, noise, gate optimisation, transpilation, NISQ-era hardware limits, closing with a short practical coding challenge.
+- **Fest** — the 3 and 4 November 2026 hybrid event as a whole.
+- **Day 1** — 3 November 2026. IBM Keynote sessions led by confirmed speaker Surya Vamsi Miriyala with Q&A, followed by an interactive quantum exploration session.
+- **Day 2** — 4 November 2026. Hands-on Qiskit circuits, hardware basics and algorithms, a technical session on quantum technologies and architectures, concluding with a hands-on coding challenge.
+- **Session choice** — a registrant indicates their session preferences during registration.
 - **QQuEST** — the quantum computing club at MIT-ADT, the host community.
 - **Registrant** — a person who submitted the form. Not a "user"; there are no accounts.
-- **The mirror** — the Google Sheet copy of D1. Derived, never authoritative.
-- **Offline route** — the coordinator-mediated paper process for under-18 attendees. Not a code path.
+- **Offline route** — the coordinator-mediated process for under-18 attendees. Not a code path.
 - **The concept** — the site's editorial direction: quantum stated precisely, hype corrected with numbers. Enforced as INV-8.

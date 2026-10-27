@@ -2,7 +2,7 @@
 
 *One page. Read in 3 minutes. Rewritten whenever state changes.*
 
-**What this is:** the public site for Qiskit Fall Fest 2026 at MIT-ADT Pune on 3 November 2026 — lets a student anywhere in Pune decide whether the fest is for them and register, and leaves behind an honest reference on what quantum computing can and cannot do.
+**What this is:** the public site for Qiskit Fall Fest 2026 at MIT-ADT Pune and online via Microsoft Teams on 3 and 4 November 2026 — lets a student anywhere in Pune decide whether the fest is for them and register, and leaves behind an honest reference on what quantum computing can and cannot do.
 
 **Live at:** `https://qff-2026-site.vercel.app` · **Repo:** https://github.com/qquestclub/qff-2026-site
 **Lead:** Pushkar Kumar — final say on everything, including every content story.
@@ -11,17 +11,17 @@
 
 ## Where things stand
 
-**Milestone:** M1 complete / M2 superseded by D-014 / M3 closed
+**Milestone:** M1 complete / M2 superseded by D-014 / M3 closed (replaced by Day 2 hands-on challenge)
 **Exit criteria:** every section renders correctly, every claim is sourced, zero placeholder text reachable in production, and the Register CTA points to the official Google Form.
 
 The site is live at `https://qff-2026-site.vercel.app`, on **Vercel** (D-013). All core sections (01–10: Hero, About, Decade, Myths, Sessions, Speakers, Schedule, FAQ, Checklist, and Venue) are built and live. Confirmed IBM speaker Surya Vamsi Miriyala is featured with photo and bio.
 
-Per **D-014**, registration intake has officially moved to a standing Google Form (`https://docs.google.com/forms/d/e/1FAIpQLSe7TCtOGT9_xKIXn0eGkDWh1JM-f67NZ2BZOFaYsLSHYcz6iQ/viewform`). The custom Supabase registration routes, client, keepalive workflow, and dependencies are retired. `/register` now serves as the permanent registration hub with an 18+ policy statement, under-18 offline coordinator route (`qquest.mitadtuniversity@gmail.com`), QR code (`/register-qr.png`), and primary CTA button. Hackathon (M3) is officially closed/cancelled following the 10 October 2026 sponsorship gate.
+Per **D-014**, registration intake has officially moved to a standing Google Form (`https://docs.google.com/forms/d/e/1FAIpQLSe7TCtOGT9_xKIXn0eGkDWh1JM-f67NZ2BZOFaYsLSHYcz6iQ/viewform`). The custom Supabase registration routes, client, keepalive workflow, and dependencies are retired. `/register` now serves as the permanent registration hub with an 18+ policy statement, under-18 offline coordinator route (`qquest.mitadtuniversity@gmail.com`), QR code (`/register-qr.png`), and primary CTA button. Hackathon (M3) is closed and replaced by a closing hands-on challenge on Day 2.
 
-**Last done:** Confirmed IBM speaker added; D-014 adopted (registration moved to Google Form, Supabase retired, M3 cancelled); `/register` rewritten; M2 marked superseded and M3 marked closed in `spec/tasks.md`.
+**Last done:** Transitioned site from one day to two-day hybrid event (3 and 4 November 2026, in person + Microsoft Teams); added Day 1 / Day 2 schedule groups; updated sessions, FAQ, Hero, venue notice, and documentation.
 **Next:** Polish and final rehearsal checks ahead of the event on 3 and 4 November 2026.
 
-**Event dates:** 3 and 4 November 2026 at MIT Art, Design and Technology University, Pune.
+**Event dates:** 3 and 4 November 2026 at MIT Art, Design and Technology University, Pune & Online (Microsoft Teams).
 
 ---
 

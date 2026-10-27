@@ -8,7 +8,7 @@ export default function SectionSessions() {
             <SectionContainer>
 
                     <SectionLabel number="05" label="Sessions" />
-                    <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white">What happens on the day</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white">Event Sessions</h2>
                     <div className="grid gap-6 md:grid-cols-2">
                         {sessions
                             .sort((a, b) => a.order - b.order)

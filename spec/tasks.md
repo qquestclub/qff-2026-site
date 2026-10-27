@@ -57,18 +57,18 @@ Recorded 6 September after auditing the first two merged PRs. Do these before Ta
 - [x] **M1-CONTENT-03** **STORY** Write `content/sessions.ts` from the confirmed Part 1 and Part 2 descriptions. *Acceptance:* duration ranges stated; Part 2 lists gates, noise, transpilation, NISQ limits and the closing challenge; no claim that every participant runs a personal job on a QPU unless verified (`architecture.md` §8). — live; note Part 2's description covers transpilation, noise and the closing challenge but doesn't explicitly mention gates or NISQ limits by name. No lead sign-off recorded either. Worth a follow-up pass, not blocking.
 - [x] **M1-CONTENT-04** **STORY** Write `content/faq.ts` — minimum: is it free, do I need a background, do I need my own hardware, will I get a certificate, can I attend from another college, what do I install. *Acceptance:* answers are direct, no hedging.
 - [x] **M1-CONTENT-05** **STORY** Write `content/checklist.ts` — IBM Quantum account creation, laptop, Python and Qiskit install. *Acceptance:* a first-year could follow it without asking anyone.
-- [x] **M1-CONTENT-06** Write `content/schedule.ts` — times as UTC ISO, rendered IST via `lib/format.ts`
-- [x] **M1-CONTENT-07** **STORY** Write `content/speakers.ts` — IBM speaker featured. *Acceptance:* no invented names, no placeholder bios. Blocked until names are confirmed.
+- [x] **M1-CONTENT-06** Write `content/schedule.ts` — two-day schedule with `day: 1 | 2`, times as UTC ISO, rendered IST via `lib/format.ts` (D-015)
+- [x] **M1-CONTENT-07** **STORY** Write `content/speakers.ts` — IBM speaker featured. *Acceptance:* no invented names, no placeholder bios. Confirmed IBM speaker Surya Vamsi Miriyala live with photo and bio.
 
 ### UI
 - [x] **M1-UI-01** Build `SectionMyths` — claim stated, correction revealed on interaction; `MAGENTA_40` for corrections
 - [x] **M1-UI-02** Build `SectionDecade` — 2016–2026 timeline
-- [x] **M1-UI-03** Build `SectionSessions` — Part 1 and Part 2 cards
-- [x] **M1-UI-04** Build `SectionSchedule` with `components/ui/ScheduleRow.tsx`
-- [x] **M1-UI-05** Build `SectionFaq` with `components/ui/FaqItem.tsx` — accessible disclosure, keyboard operable
+- [x] **M1-UI-03** Build `SectionSessions` — rewritten for two-day event (keynotes, interactive, circuits, technologies, closing challenge)
+- [x] **M1-UI-04** Build `SectionSchedule` with `components/ui/ScheduleRow.tsx` — groups items by Day 1 and Day 2, responsive down to 360px
+- [x] **M1-UI-05** Build `SectionFaq` with `components/ui/FaqItem.tsx` — accessible disclosure, keyboard operable; covers online attendance, certificates, and closing challenge
 - [x] **M1-UI-06** Build `SectionChecklist`
-- [x] **M1-UI-07** Build `SectionSpeakers` with `components/ui/SpeakerCard.tsx` — renders the placeholder speaker noted at M1-CONTENT-07
-- [x] **M1-UI-08** Build `SectionVenue` — address, static map image (not an embed — INV-5), named contacts
+- [x] **M1-UI-07** Build `SectionSpeakers` with `components/ui/SpeakerCard.tsx` — renders confirmed IBM speaker with photo and bio
+- [x] **M1-UI-08** Build `SectionVenue` — address, static map image (not an embed — INV-5), named contacts, and online attendee Teams link notice
 - [ ] **M1-UI-09** Build `SectionAbout` — what Fall Fest is, and that this one is open beyond MIT-ADT. State the openness prominently; it is a genuine differentiator against DBATU
 - [ ] **M1-UI-10** Add the noise-resolving-into-signal hero treatment, `prefers-reduced-motion` guarded
 - [ ] **M1-UI-11** Add a QR code image linking to `/register` for use on slides and posters
@@ -77,7 +77,7 @@ Recorded 6 September after auditing the first two merged PRs. Do these before Ta
 - [ ] **M1-OPS-01** Write the banned-adjective lint script; wire into `npm run lint`
 - [ ] **M1-OPS-02** Full `spec/smoke.md` pass including §4 and §5
 - [ ] **M1-OPS-03** Record the M1 verdict table in `spec/evals.md` §7
-- [ ] **M1-OPS-04** Point the Register CTA (nav button + hero button + `/register` page) at the standing Google Form URL from M0-FIX-07. Add one line above the form embed/link: "Filling this in directly — the full registration page is coming." This is what makes M1 genuinely deployable rather than content-complete with a dead button
+- [x] **M1-OPS-04** Point the Register CTA at the official Google Form (D-014)
 
 ---
 

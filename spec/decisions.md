@@ -204,6 +204,26 @@ The rejected list is the part that does the work. Without it, the same option ge
 
 ---
 
+## D-015 — Site moves to a two-day hybrid format (3 and 4 November 2026) with closing challenge
+
+**Status:** decided
+**Decision:**
+1. Event expanded from one day to two days: Day 1 (3 November 2026) and Day 2 (4 November 2026).
+2. Format is hybrid: in-person attendance at MIT-ADT University, Pune, and online attendance via Microsoft Teams. The Teams meeting link is emailed directly to registered attendees and is not published on the public website.
+3. Schedule updated to group items by `day: 1 | 2` in `content/schedule.ts` and `SectionSchedule.tsx`.
+4. Day 1 features two 1-hour keynote sessions by confirmed IBM speaker Surya Vamsi Miriyala with 10–15 min Q&A each, followed by an interactive exploration session.
+5. Day 2 features hands-on quantum circuits, hardware basics, and algorithms in Qiskit, a 30–60 min technical session on quantum technologies, and a closing hands-on challenge.
+6. The cancelled hackathon is replaced by a closing hands-on challenge on Day 2. Certificates of participation are issued to attendees after submitting the post-event feedback form.
+**Rationale:**
+- Accommodates depth of engagement with the confirmed IBM speaker, gives participants proper time for hands-on learning with Qiskit, and broadens reach to online attendees across institutions.
+- Replaces speculative hackathon logistics with an educational hands-on coding challenge directly aligned with learning outcomes.
+**Rejected:**
+- *Publishing Teams link openly on the web* — exposes meetings to spam/trolling and breaks registration attendance tracking.
+- *Keeping a single compressed day* — would rush the IBM speaker sessions and leave inadequate time for hands-on Qiskit circuits and the coding challenge.
+**Revisit if:** Never for this event cycle.
+
+---
+
 ## D-0XX — <short title>
 
 **Status:** proposed | decided | superseded by D-0YY

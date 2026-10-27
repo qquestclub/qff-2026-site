@@ -15,8 +15,11 @@ export default function SectionVenue() {
                         <h3 className="text-2xl font-bold text-gray-900 mb-4">
                             MIT Art, Design and Technology University
                         </h3>
-                        <p className="text-gray-700 leading-relaxed mb-8">
+                        <p className="text-gray-700 leading-relaxed mb-4">
                             Rajbaug, Loni Kalbhor, Pune, Maharashtra 412201.
+                        </p>
+                        <p className="text-gray-700 leading-relaxed mb-8">
+                            Online attendees will receive the Microsoft Teams meeting link after registering.
                         </p>
 
                         <h4 className="text-lg font-bold text-gray-900 mb-2">Contacts</h4>

@@ -40,7 +40,7 @@ export default function RegisterPage() {
                         </h1>
                         <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-3xl">
                             Join us on <span className="font-semibold text-gray-900">3 and 4 November 2026</span> at MIT
-                            Art, Design and Technology University, Pune. Registration is free and open to students,
+                            Art, Design and Technology University, Pune, or online via Microsoft Teams. Registration is free and open to students,
                             researchers, and faculty from all colleges and universities.
                         </p>
                     </div>
@@ -120,7 +120,7 @@ export default function RegisterPage() {
                                 </div>
                                 <p className="text-sm text-gray-600 leading-relaxed">
                                     Web registration is strictly for individuals who are 18 years of age or older on
-                                    the day of the event. Minors cannot register through this form.
+                                    the event dates (3 and 4 November 2026). Minors cannot register through this form.
                                 </p>
                             </div>
 

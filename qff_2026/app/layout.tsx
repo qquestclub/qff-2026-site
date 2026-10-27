@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL( process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"), // required for resolving image URLs
 
   title: "Qiskit Fall Fest 2026 | MIT ADT University, Pune",
-  description: "A one-day quantum computing event at MIT Art, Design and Technology University, Pune, on 3 November 2026 — two sessions, Quantum 101 and Hands-on with Qiskit, running on real IBM quantum hardware.",
+  description: "A two-day hybrid quantum computing event at MIT Art, Design and Technology University, Pune, and online on 3 and 4 November 2026 — featuring keynote sessions from IBM, hands-on Qiskit workshops, and a closing challenge.",
 
   alternates: {
     canonical: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",

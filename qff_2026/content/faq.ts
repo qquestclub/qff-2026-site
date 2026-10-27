@@ -9,23 +9,31 @@ export const faqs: FaqItem[] = [
         answer: "Yes. Qiskit Fall Fest 2026 at MIT-ADT is completely free to attend."
     },
     {
-        question: "Do I need a background in quantum mechanics?",
-        answer: "No. Part 1 (Quantum 101) is designed specifically to introduce the core concepts from scratch. You only need a basic understanding of Python for Part 2."
+        question: "Can I attend online?",
+        answer: "Yes. Qiskit Fall Fest 2026 is a hybrid event. Registered virtual attendees will receive the Microsoft Teams meeting link directly via email prior to the event. The link is sent to registrants and is not published publicly."
     },
     {
-        question: "Do I need my own quantum hardware?",
-        answer: "No. The hands-on labs will run primarily on simulators, which is how most quantum development is done. We will use real IBM quantum hardware for specific demonstrations."
+        question: "Do I need a background in quantum mechanics?",
+        answer: "No. The Day 1 keynote and interactive sessions introduce quantum computing concepts from scratch. You only need basic familiarity with Python for the Day 2 hands-on workshops."
     },
     {
         question: "Will I get a certificate?",
-        answer: "Yes, attendees who participate in both sessions will receive an official certificate of participation."
+        answer: "Yes. Official certificates of participation are issued to attendees after completing the post-event feedback form."
+    },
+    {
+        question: "What is the closing hands-on challenge?",
+        answer: "The closing hands-on challenge on Day 2 is a structured practical coding activity where participants build and test quantum circuits in Qiskit to reinforce what they have learned across both days."
+    },
+    {
+        question: "Do I need my own quantum hardware?",
+        answer: "No. Hands-on exercises run primarily on simulators, which reflect standard quantum development workflows. We also run demonstrations using IBM quantum hardware via cloud access."
     },
     {
         question: "Can I attend if I'm not from MIT-ADT?",
-        answer: "Yes! This event is open to students from any college or university."
+        answer: "Yes. The event is open to students, researchers, and faculty from any college or university."
     },
     {
         question: "What do I need to install beforehand?",
-        answer: "You will need a laptop with Python and Qiskit installed. See the checklist section for detailed setup instructions."
+        answer: "You will need a laptop with Python and Qiskit installed if you participate in the hands-on sessions. Refer to the checklist section for step-by-step setup instructions."
     }
 ];

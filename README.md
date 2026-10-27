@@ -2,7 +2,7 @@
 
 The event website for **Qiskit Fall Fest 2026**, hosted by [QQuEST](https://github.com/qquestclub), the quantum computing club at MIT Art, Design and Technology University, Pune.
 
-**3 November 2026 · MIT-ADT Pune · Free · Open to students from any college**
+**3 and 4 November 2026 · MIT-ADT Pune & Online (Hybrid) · Free · Open to students from any college**
 
 🔗 **Live site:** https://qff-2026-site.vercel.app
 
@@ -10,13 +10,13 @@ The event website for **Qiskit Fall Fest 2026**, hosted by [QQuEST](https://gith
 
 ## The event
 
-A one-day fest in two parts:
+A two-day hybrid fest:
 
-**Quantum 101** (1–2 h) — what quantum computing actually is, what it's genuinely useful for, and what it is *not*. Built specifically to correct the claims people arrive with.
+**Day 1 (3 November 2026)** — Keynote sessions by confirmed IBM speaker Surya Vamsi Miriyala covering quantum computing foundations, hardware roadmaps, and enterprise adoption with dedicated Q&A, followed by an interactive quantum exploration session.
 
-**Hands-on with Qiskit** (2–3 h) — building circuits in Jupyter, running on simulators and on real IBM quantum hardware. Covers universal gates, noise, gate optimisation, transpilation, and the limits of NISQ-era hardware. Ends with a short coding challenge.
+**Day 2 (4 November 2026)** — Hands-on circuits, hardware basics, and quantum algorithms in Qiskit, a technical session on quantum technologies and architectures, and a closing hands-on challenge.
 
-No background in physics required. Part 2 assumes basic Python.
+No background in physics required. Hands-on sessions assume basic Python.
 
 ---
 

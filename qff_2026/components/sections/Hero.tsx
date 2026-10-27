@@ -40,14 +40,14 @@ export default function Hero() {
 
                             <p className="text-base sm:text-lg lg:text-xl mt-4 sm:mt-5 text-purple-300 leading-relaxed">
                                 <span className="text-destructive font-bold">
-                                    3 November 2026
+                                    3 and 4 November 2026
                                 </span>{" "}
-                                MIT Art, Design and Technology University, Pune
+                                MIT Art, Design and Technology University, Pune & Online (Hybrid)
                             </p>
 
                             <p className="text-base sm:text-lg lg:text-xl mt-4 sm:mt-5 leading-relaxed max-w-2xl">
-                                A one-day quantum computing event: two sessions,
-                                real IBM hardware, no hype.
+                                A two-day hybrid quantum computing event: IBM keynote sessions,
+                                hands-on circuits, quantum technologies, and a closing challenge.
                             </p>
 
                             {/* Render Isolated Countdown Component */}
