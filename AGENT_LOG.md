@@ -4,7 +4,15 @@ Append-only. **Newest entry at the top.** Every entry names the milestone, the t
 
 ---
 
+## 2026-10-27 — Confirmed IBM speaker added with photo (session 7)
+
+**Milestone:** M1 | **Tasks:** M1-CONTENT-07 | **Model/tool:** Antigravity
+- Confirmed IBM speaker Surya Vamsi Miriyala added to `content/speakers.ts` with photo and speaker-approved bio, `SpeakerCard.tsx` updated with `next/image` support and fallback, and placeholder note dropped from `spec/tasks.md`.
+
+---
+
 ## 2026-09-14 — Vercel deploy backfilled into the record; docs reconciled to match (session 6)
+
 
 **Milestone:** M1
 **Tasks:** doc-only pass across `decisions.md`, `CONTRACT.md`, `README.md`, `BRIEF.md`, `architecture.md`, `tasks.md`; plus `layout.tsx` metadata, fonts, and `lib/tokens.ts`

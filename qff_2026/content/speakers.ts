@@ -1,3 +1,9 @@
+export interface SpeakerImage {
+    src: string;
+    alt: string;
+    path?: string;
+}
+
 export interface Speaker {
     id: string;
     name: string;
@@ -6,19 +12,26 @@ export interface Speaker {
     bio: string;
     session: string;   // references a Session id
     isPlaceholder: boolean; // true = not yet confirmed, must be swapped before launch
+    image?: {
+        src: string;
+        alt: string;
+        path?: string;
+    };
 }
 
-// PLACEHOLDER CONTENT — team has approved placeholders for now (see PR description).
-// isPlaceholder: true must stay true until IBM confirms the actual speaker,
-// at which point replace name/role/affiliation/bio and flip this to false.
 export const speakers: Speaker[] = [
     {
-        id: "speaker-placeholder-1",
-        name: "Speaker Name TBA",
-        role: "Quantum Researcher",
-        affiliation: "IBM Quantum",
-        bio: "Speaker bio pending confirmation. This is placeholder content and will be replaced once IBM confirms the delegate for this event.",
+        id: "surya-vamsi-miriyala",
+        name: "Surya Vamsi Miriyala",
+        role: "IBM Quantum Ambassador | Worldwide Product Manager - Asset Lifecycle Management",
+        affiliation: "IBM India Software Labs, Bengaluru",
+        bio: "Surya Vamsi Miriyala is a Worldwide Product Manager at IBM India Software Labs, where he leads global go-to-market strategy for Asset Lifecycle Management solutions, helping enterprises leverage technology to drive innovation and business transformation. As an IBM Quantum Associate Ambassador, Surya is passionate about advancing quantum education and bridging the gap between quantum research and enterprise adoption. Surya holds an Executive MBA from the Indian Institute of Management Ahmedabad (IIMA) and a bachelor's degree in Mechanical Engineering from SASTRA University.",
         session: "quantum-101",
-        isPlaceholder: true
+        image: {
+            src: "/speakers/Surya_Vamsi_Miriyala.jpg",
+            path: "/speakers/Surya_Vamsi_Miriyala.jpg",
+            alt: "Surya Vamsi Miriyala — IBM Quantum Ambassador | Worldwide Product Manager - Asset Lifecycle Management"
+        },
+        isPlaceholder: false
     }
 ];

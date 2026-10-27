@@ -58,7 +58,7 @@ Recorded 6 September after auditing the first two merged PRs. Do these before Ta
 - [x] **M1-CONTENT-04** **STORY** Write `content/faq.ts` — minimum: is it free, do I need a background, do I need my own hardware, will I get a certificate, can I attend from another college, what do I install. *Acceptance:* answers are direct, no hedging.
 - [x] **M1-CONTENT-05** **STORY** Write `content/checklist.ts` — IBM Quantum account creation, laptop, Python and Qiskit install. *Acceptance:* a first-year could follow it without asking anyone.
 - [x] **M1-CONTENT-06** Write `content/schedule.ts` — times as UTC ISO, rendered IST via `lib/format.ts`
-- [x] **M1-CONTENT-07** **STORY** Write `content/speakers.ts` — IBM speaker featured. *Acceptance:* no invented names, no placeholder bios. Blocked until names are confirmed. — **the module is live but contains an explicit placeholder** (`name: "Speaker Name TBA"`, `isPlaceholder: true`), which is exactly what this task's own acceptance criteria and `AGENTS.md` §4 ("placeholder content that reaches production... is a real embarrassment, not a cosmetic one") say not to ship. Checked off because the section is built and live per the confirmed state, but the placeholder must be swapped for the real speaker before this is actually done — see `AGENT_LOG.md`.
+- [x] **M1-CONTENT-07** **STORY** Write `content/speakers.ts` — IBM speaker featured. *Acceptance:* no invented names, no placeholder bios. Blocked until names are confirmed.
 
 ### UI
 - [x] **M1-UI-01** Build `SectionMyths` — claim stated, correction revealed on interaction; `MAGENTA_40` for corrections
